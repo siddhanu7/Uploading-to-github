@@ -1,0 +1,41 @@
+
+body{
+    background-color: 	rgb(211,211,211);
+}
+
+
+h1 {
+    color:#7f81ff;
+}
+
+
+table, th, td, tr {
+    border: 3px solid black;
+    text-align: center;
+    
+  }
+  
+  #billlabel{
+    font-size: 22px;
+
+  }
+  
+  #numlabel{
+    font-size: 22px;
+
+  }
+  
+  #servicelabel{
+    font-size: 22px;
+
+  }
+
+  #displaydate{
+
+    font-size: 22px;
+  }
+  
+  #bye{
+
+    font-size: 22px;
+  }

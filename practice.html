@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">	
+    <title>Per Person Amt Share</title>
+</head>
+<body>
+  <!--This is the parent container-->
+  <div class="parent-container">
+    <h1>Resturant Tips and Split Amount Calculator</h1><br/><br/><br/>
+    <!--Created a form to capture total bill amount-->
+    <form>
+      <label id= "billlabel">Bill Amount: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input  id ="billAmt"type="number"> </input>
+    </form>
+    <br/>
+    <!--Created a form to capture number of guests to which teh amount should be divided-->
+    <form>
+      <label id= "numlabel">Number of Guests:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+      <input  id ="guest"type="number"> </input>
+    </form>
+    <br/>
+    <!--Created a form to capture Quality of service that corelates to tip-->
+    <form>
+      <label id= "servicelabel">Quality of Service:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+      <select id="serviceQual">
+        <!--Tip rates-->
+        <option disabled selected value="0">Choose an option</option>
+        <option value="0.2">Outstanding service-20%</option>
+        <option value="0.18">Very Good service-18%</option>
+        <option value="0.15">Needs Improvement -15%</option>
+        <option value="0.1">Bad Service-10%</option>
+        <option value="0.05">Terrible service- 5%</option>
+      </select><br/><br/>
+      <div id="child-container">
+        <!--On clicking the button call java script-->
+        <button type="button" onclick="calculate()">Calculate the Per Person Amount</button><br/>
+        <!--Display for tip and the total split-->
+        <h2 id="tip">Total Tip: $0.00</h2>
+        <h2 id="total">Total Due: $0.00</h2>
+      </div>
+      
+
+    </form>
+
+
+   
+
+  </div>
+  <div id="displaydate"></div>
+
+  <marquee id= "bye"><h1>THANK-YOU AND SEE YOU NEXT TIME</h1></marquee>
+    
+	  <script src="main.js"></script>
+  </body>
+  </html>
+  
